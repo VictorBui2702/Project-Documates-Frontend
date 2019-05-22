@@ -35,7 +35,7 @@ export default class Discover extends Component {
                   <h5 className="card-title">{document.name}</h5>
                   <p className="text-success">#{document.category}</p>
                   <Document file={document.document}>
-                    <Page width={320} pageNumber={1} />
+                    <Page width={250} pageNumber={1} />
                   </Document>
                 </div>
                 <div className="card-footer text-center">
