@@ -57,11 +57,14 @@ class App extends Component {
       .then(data => {
         localStorage.setItem("name", data["name"]);
         localStorage.setItem("id", data["id"]);
-
-        this.setState({
-          name: data["name"],
-          id: data["id"]
-        });
+        console.log(data);
+        this.setState(
+          {
+            name: data["name"],
+            id: data["id"]
+          },
+          () => console.log(this.state.name)
+        );
       });
   };
 
