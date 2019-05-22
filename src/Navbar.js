@@ -12,7 +12,7 @@ export default class Navbar extends Component {
           href="#"
           onClick={() => this.props.onClickLogout()}
         >
-          Sign out
+          <b>Sign out</b>
         </a>
       );
     } else {
@@ -23,9 +23,9 @@ export default class Navbar extends Component {
               pathname: "/signin/"
             }}
           >
-            <span className="text-success py-2 d-none d-md-inline-block">
+            <b className="text-success py-2 d-none d-md-inline-block">
               Sign in
-            </span>
+            </b>
           </Link>
 
           <Link
@@ -33,9 +33,9 @@ export default class Navbar extends Component {
               pathname: "/signup/"
             }}
           >
-            <span className="text-success py-2 d-none d-md-inline-block">
+            <b className="text-success py-2 d-none d-md-inline-block">
               Sign up
-            </span>
+            </b>
           </Link>
         </>
       );
@@ -45,28 +45,28 @@ export default class Navbar extends Component {
       <nav className="site-header sticky-top py-1">
         <div className="container d-flex flex-column flex-md-row justify-content-between">
           <a className="py-2" href="#">
-            <img src={Logo} alt="" width="32" height="32" />
+            <img src={Logo} alt="" width="35" height="35" />
           </a>
           <Link
             to={{
-              pathname: "/home/"
+              pathname: "/"
             }}
           >
-            <span className="py-2 d-none d-md-inline-block">Home</span>
+            <b className="py-2 d-none d-md-inline-block">Home</b>
           </Link>
           <Link
             to={{
               pathname: "/upload/"
             }}
           >
-            <span className="py-2 d-none d-md-inline-block">Upload</span>
+            <b className="py-2 d-none d-md-inline-block">Upload</b>
           </Link>
           <Link
             to={{
               pathname: "/discover/"
             }}
           >
-            <span className="py-2 d-none d-md-inline-block">Discover</span>
+            <b className="py-2 d-none d-md-inline-block">Discover</b>
           </Link>
           {this.props.name && (
             <b className="py-2 d-none d-md-inline-block text-warning">

@@ -24,7 +24,7 @@ export default class Login extends Component {
   onClickSignin = e => {
     e.preventDefault();
     this.props.onClickSignin(this.state.mail, this.state.password);
-    this.props.history.push("/home/");
+    this.props.history.push("/");
   };
 
   render() {

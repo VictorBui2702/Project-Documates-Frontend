@@ -209,7 +209,7 @@ class App extends Component {
           />
 
           <Route
-            path="/home/"
+            path="/"
             exact
             render={props => (
               <Home name={this.state.name} mail={this.state.mail} {...props} />
