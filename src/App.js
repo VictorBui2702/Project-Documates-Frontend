@@ -55,7 +55,6 @@ class App extends Component {
         return response.json();
       })
       .then(data => {
-        localStorage.setItem("mail", data["mail"]);
         localStorage.setItem("name", data["name"]);
         localStorage.setItem("id", data["id"]);
 
