@@ -79,13 +79,7 @@ class App extends Component {
         password: password,
         name: name
       })
-    })
-      .then(response => {
-        return response.json();
-      })
-      .then(data => {
-        console.log(data);
-      });
+    });
 
     this.setState({
       uploadedFileCloudinaryUrl: "",
@@ -101,13 +95,7 @@ class App extends Component {
         Accept: "application/json",
         "Content-Type": "application/json"
       }
-    })
-      .then(response => {
-        return response.json();
-      })
-      .then(data => {
-        console.log(data);
-      });
+    });
 
     this.setState({
       name: ""
@@ -162,13 +150,7 @@ class App extends Component {
         user_id: id,
         name: name
       })
-    })
-      .then(response => {
-        return response.json();
-      })
-      .then(data => {
-        console.log(data);
-      });
+    });
 
     // remove img url
     this.setState({
