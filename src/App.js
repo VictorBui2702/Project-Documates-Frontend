@@ -104,7 +104,6 @@ class App extends Component {
     });
 
     localStorage.clear();
-    this.props.history.push("/signin/");
   };
 
   onImageDrop = files => {
