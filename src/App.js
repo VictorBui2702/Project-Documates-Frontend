@@ -39,7 +39,7 @@ class App extends Component {
   }
 
   handleSignin = (mail, password) => {
-    const url = "http://localhost:5000/signin";
+    const url = "https://documates.herokuapp.com/signin";
     fetch(url, {
       method: "POST",
       headers: {
@@ -67,7 +67,7 @@ class App extends Component {
   };
 
   handleSignup = (mail, password, name) => {
-    const url = "http://localhost:5000/signup";
+    const url = "https://documates.herokuapp.com/signup";
     fetch(url, {
       method: "POST",
       headers: {
@@ -94,7 +94,7 @@ class App extends Component {
   };
 
   handleLogout = () => {
-    const url = "http://localhost:5000/signout";
+    const url = "https://documates.herokuapp.com/signout";
     fetch(url, {
       method: "GET",
       headers: {
@@ -145,7 +145,7 @@ class App extends Component {
   };
 
   handleUploadFile = category => {
-    const url = "http://localhost:5000/upload";
+    const url = "https://documates.herokuapp.com/upload";
     const document = this.state.uploadedFileCloudinaryUrl;
     const name = this.state.uploadedFile.name;
     const id = this.state.id;
@@ -178,7 +178,7 @@ class App extends Component {
   };
 
   handleChangeCategory = category => {
-    const url = `http://localhost:5000/documentlist/${category}`;
+    const url = `https://documates.herokuapp.com/documentlist/${category}`;
 
     fetch(url, {
       method: "GET",
