@@ -10,8 +10,9 @@ import UploadDoc from "./UploadDoc";
 import Discover from "./Discover";
 import Footer from "./Footer";
 
-const CLOUDINARY_UPLOAD_PRESET = "";
-const CLOUDINARY_UPLOAD_URL = "https://api.cloudinary.com/v1_1//upload";
+const CLOUDINARY_UPLOAD_PRESET = "victorbui";
+const CLOUDINARY_UPLOAD_URL =
+  "https://api.cloudinary.com/v1_1/dau1hwx6l/upload";
 
 class App extends Component {
   constructor(props) {
